@@ -9,11 +9,11 @@ public struct SomeView: Codable {
     
     public init(
         type: ViewType,
-        container: ContainerView?,
-        image: Image?,
-        label: Label?,
-        labeledImage: LabeledImage?,
-        view: View?
+        container: ContainerView? = nil,
+        image: Image? = nil,
+        label: Label? = nil,
+        labeledImage: LabeledImage? = nil,
+        view: View? = nil
     ) {
         self.type = type
         self.container = container

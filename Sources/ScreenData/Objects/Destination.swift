@@ -7,9 +7,9 @@ public struct Destination: Codable {
     
     public init(
         type: DestinationType,
-        screen: ScreenDestination?,
-        url: URLDestination?,
-        deepLink: DeepLinkDestination?
+        screen: ScreenDestination? = nil,
+        url: URLDestination? = nil,
+        deepLink: DeepLinkDestination? = nil
     ) {
         self.type = type
         self.screen = screen

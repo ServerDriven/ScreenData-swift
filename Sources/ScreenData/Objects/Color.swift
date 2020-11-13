@@ -8,7 +8,7 @@ public struct Color: Codable {
         red: Int,
         green: Int,
         blue: Int,
-        alpha: Int
+        alpha: Int = 255
     ) {
         self.red = red
         self.green = green
