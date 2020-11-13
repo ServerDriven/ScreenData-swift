@@ -4,4 +4,8 @@ public struct URLDestination: Codable {
     public var type: DestinationType {
         .url
     }
+    
+    public init(url: String) {
+        self.url = url
+    }
 }

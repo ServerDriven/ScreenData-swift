@@ -16,4 +16,24 @@ public struct View: Codable {
     public var type: ViewType {
         .custom
     }
+    
+    public init(
+        id: String? = nil,
+        title: String,
+        subtitle: String?,
+        style: Style?,
+        image: Image?,
+        destination: Destination?,
+        axis: ViewDirectionAxis,
+        views: [SomeView]
+    ) {
+        self.id = id
+        self.title = title
+        self.subtitle = subtitle
+        self.style = style
+        self.image = image
+        self.destination = destination
+        self.axis = axis
+        self.views = views
+    }
 }
