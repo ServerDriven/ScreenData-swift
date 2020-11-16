@@ -1,22 +1,22 @@
-public struct Screen: Codable {
+public struct SomeScreen: Codable {
     public var id: String?
 
     public var title: String
     public var subtitle: String?
 
-    public var backgroundColor: Color
+    public var backgroundColor: SomeColor
 
     public var headerView: SomeView?
-    public var view: SomeView
+    public var SomeCustomView: SomeView
     public var footerView: SomeView?
     
     public init(
         id: String? = nil,
         title: String,
         subtitle: String?,
-        backgroundColor: Color,
+        backgroundColor: SomeColor,
         headerView: SomeView? = nil,
-        view: SomeView,
+        SomeCustomView: SomeView,
         footerView: SomeView? = nil
     ) {
         self.id = id
@@ -24,7 +24,7 @@ public struct Screen: Codable {
         self.subtitle = subtitle
         self.backgroundColor = backgroundColor
         self.headerView = headerView
-        self.view = view
+        self.SomeCustomView = SomeCustomView
         self.footerView = footerView
     }
 }

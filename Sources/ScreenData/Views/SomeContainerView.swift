@@ -1,10 +1,10 @@
-public struct ContainerView: Codable {
+public struct SomeContainerView: Codable {
     public var id: String?
     
     public var axis: ViewDirectionAxis
     public var views: [SomeView]
     
-    public var style: Style?
+    public var style: SomeStyle?
 
     public var type: ViewType {
         .container
@@ -14,7 +14,7 @@ public struct ContainerView: Codable {
         id: String? = nil,
         axis: ViewDirectionAxis,
         views: [SomeView],
-        style: Style?
+        style: SomeStyle?
     ) {
         self.id = id
         self.axis = axis

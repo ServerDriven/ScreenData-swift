@@ -1,7 +1,7 @@
 public enum ViewType: String, Codable {
-	case label
-	case image
-	case labeledImage
+	case SomeLabel
+	case SomeImage
+	case SomeLabeledImage
 	case container
     case custom
 }

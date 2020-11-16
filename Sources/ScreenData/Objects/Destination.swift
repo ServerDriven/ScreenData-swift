@@ -1,19 +1,13 @@
 public struct Destination: Codable {
     public var type: DestinationType
     
-    public var screen: ScreenDestination?
-    public var url: URLDestination?
-    public var deepLink: DeepLinkDestination?
+    public var toID: String
     
     public init(
         type: DestinationType,
-        screen: ScreenDestination? = nil,
-        url: URLDestination? = nil,
-        deepLink: DeepLinkDestination? = nil
+        toID: String
     ) {
         self.type = type
-        self.screen = screen
-        self.url = url
-        self.deepLink = deepLink
+        self.toID = toID
     }
 }
