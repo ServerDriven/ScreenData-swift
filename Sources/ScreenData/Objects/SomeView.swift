@@ -1,25 +1,25 @@
 public struct SomeView: Codable {
     public var type: ViewType
     
-    public var container: ContainerView?
-    public var image: Image?
-    public var label: Label?
-    public var labeledImage: LabeledImage?
-    public var view: View?
+    public var container: SomeContainerView?
+    public var someImage: SomeImage?
+    public var someLabel: SomeLabel?
+    public var someLabeledImage: SomeLabeledImage?
+    public var someCustomView: SomeCustomView?
     
     public init(
         type: ViewType,
-        container: ContainerView? = nil,
-        image: Image? = nil,
-        label: Label? = nil,
-        labeledImage: LabeledImage? = nil,
-        view: View? = nil
+        container: SomeContainerView? = nil,
+        someImage: SomeImage? = nil,
+        someLabel: SomeLabel? = nil,
+        someLabeledImage: SomeLabeledImage? = nil,
+        someCustomView: SomeCustomView? = nil
     ) {
         self.type = type
         self.container = container
-        self.image = image
-        self.label = label
-        self.labeledImage = labeledImage
-        self.view = view
+        self.someImage = someImage
+        self.someLabel = someLabel
+        self.someLabeledImage = someLabeledImage
+        self.someCustomView = someCustomView
     }
 }

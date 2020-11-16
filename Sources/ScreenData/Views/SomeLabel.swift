@@ -1,24 +1,27 @@
-public struct Image: Codable {
+public struct SomeLabel: Codable {
     public var id: String?
     
-    public var url: String
+    public var title: String
+    public var subtitle: String?
     
-    public var style: Style?
+    public var style: SomeStyle?
     
     public var destination: Destination?
     
     public var type: ViewType {
-        .image
+        .label
     }
     
     public init(
         id: String? = nil,
-        url: String,
-        style: Style?,
+        title: String,
+        subtitle: String?,
+        style: SomeStyle?,
         destination: Destination?
     ) {
         self.id = id
-        self.url = url
+        self.title = title
+        self.subtitle = subtitle
         self.style = style
         self.destination = destination
     }

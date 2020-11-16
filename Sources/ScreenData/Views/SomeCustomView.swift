@@ -1,12 +1,12 @@
-public struct View: Codable {
+public struct SomeCustomView: Codable {
     public var id: String?
 
     public var title: String
     public var subtitle: String?
 
-    public var style: Style?
+    public var style: SomeStyle?
     
-    public var image: Image?
+    public var someImage: SomeImage?
 
     public var destination: Destination?
     public var axis: ViewDirectionAxis
@@ -21,8 +21,8 @@ public struct View: Codable {
         id: String? = nil,
         title: String,
         subtitle: String?,
-        style: Style?,
-        image: Image?,
+        style: SomeStyle?,
+        someImage: SomeImage?,
         destination: Destination?,
         axis: ViewDirectionAxis,
         views: [SomeView]
@@ -31,7 +31,7 @@ public struct View: Codable {
         self.title = title
         self.subtitle = subtitle
         self.style = style
-        self.image = image
+        self.someImage = someImage
         self.destination = destination
         self.axis = axis
         self.views = views

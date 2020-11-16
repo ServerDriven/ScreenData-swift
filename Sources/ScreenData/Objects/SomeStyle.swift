@@ -1,9 +1,9 @@
-public struct Style: Codable {
-    public var backgroundColor: Color?
+public struct SomeStyle: Codable {
+    public var backgroundColor: SomeColor?
     public var isHidden: Bool
     
     public init(
-        backgroundColor: Color? = nil,
+        backgroundColor: SomeColor? = nil,
         isHidden: Bool = false
     ) {
         self.backgroundColor = backgroundColor

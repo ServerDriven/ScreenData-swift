@@ -1,11 +1,11 @@
-public struct LabeledImage: Codable {
+public struct SomeLabeledImage: Codable {
     public var id: String?
     
     public var title: String
     public var subtitle: String?
-    public var image: Image
+    public var someImage: SomeImage
     
-    public var style: Style?
+    public var style: SomeStyle?
 	
     public var destination: Destination?
     
@@ -17,14 +17,14 @@ public struct LabeledImage: Codable {
         id: String? = nil,
         title: String,
         subtitle: String?,
-        image: Image,
-        style: Style?,
+        someImage: SomeImage,
+        style: SomeStyle?,
         destination: Destination?
     ) {
         self.id = id
         self.title = title
         self.subtitle = subtitle
-        self.image = image
+        self.someImage = someImage
         self.style = style
         self.destination = destination
     }
