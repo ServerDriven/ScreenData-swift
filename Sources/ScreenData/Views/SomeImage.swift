@@ -8,7 +8,7 @@ public struct SomeImage: Codable {
     public var destination: Destination?
     
     public var type: ViewType {
-        .SomeImage
+        .image
     }
     
     public init(

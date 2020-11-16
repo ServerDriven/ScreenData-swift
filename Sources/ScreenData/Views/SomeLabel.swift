@@ -9,7 +9,7 @@ public struct SomeLabel: Codable {
     public var destination: Destination?
     
     public var type: ViewType {
-        .SomeLabel
+        .label
     }
     
     public init(

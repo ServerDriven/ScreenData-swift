@@ -10,7 +10,7 @@ public struct SomeLabeledImage: Codable {
     public var destination: Destination?
     
     public var type: ViewType {
-        .SomeLabeledImage
+        .labeledImage
     }
     
     public init(
