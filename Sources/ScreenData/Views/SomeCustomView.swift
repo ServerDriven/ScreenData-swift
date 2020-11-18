@@ -20,10 +20,10 @@ public struct SomeCustomView: Codable {
     public init(
         id: String? = nil,
         title: String,
-        subtitle: String?,
-        style: SomeStyle?,
-        someImage: SomeImage?,
-        destination: Destination?,
+        subtitle: String? = nil,
+        style: SomeStyle? = nil,
+        someImage: SomeImage? = nil,
+        destination: Destination? = nil,
         axis: ViewDirectionAxis,
         views: [SomeView]
     ) {

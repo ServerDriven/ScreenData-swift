@@ -14,8 +14,8 @@ public struct SomeImage: Codable {
     public init(
         id: String? = nil,
         url: String,
-        style: SomeStyle?,
-        destination: Destination?
+        style: SomeStyle? = nil,
+        destination: Destination? = nil
     ) {
         self.id = id
         self.url = url

@@ -16,10 +16,10 @@ public struct SomeLabeledImage: Codable {
     public init(
         id: String? = nil,
         title: String,
-        subtitle: String?,
+        subtitle: String? = nil,
         someImage: SomeImage,
-        style: SomeStyle?,
-        destination: Destination?
+        style: SomeStyle? = nil,
+        destination: Destination? = nil
     ) {
         self.id = id
         self.title = title

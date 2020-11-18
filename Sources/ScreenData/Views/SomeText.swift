@@ -1,24 +1,21 @@
-public struct SomeContainerView: Codable {
+public struct SomeText: Codable {
     public var id: String?
     
-    public var axis: ViewDirectionAxis
-    public var views: [SomeView]
+    public var title: String
     
     public var style: SomeStyle?
-
+    
     public var type: ViewType {
-        .container
+        .text
     }
     
     public init(
         id: String? = nil,
-        axis: ViewDirectionAxis,
-        views: [SomeView],
+        title: String,
         style: SomeStyle? = nil
     ) {
         self.id = id
-        self.axis = axis
-        self.views = views
+        self.title = title
         self.style = style
     }
 }
