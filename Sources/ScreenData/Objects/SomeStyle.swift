@@ -1,12 +1,19 @@
 public struct SomeStyle: Codable {
-    public var backgroundColor: SomeColor?
     public var isHidden: Bool
+    public var cornerRadius: Int
+    
+    public var foregroundColor: SomeColor?
+    public var backgroundColor: SomeColor?
     
     public init(
-        backgroundColor: SomeColor? = nil,
-        isHidden: Bool = false
+        isHidden: Bool = false,
+        cornerRadius: Int = 0,
+        foregroundColor: SomeColor? = nil,
+        backgroundColor: SomeColor? = nil
     ) {
-        self.backgroundColor = backgroundColor
         self.isHidden = isHidden
+        self.cornerRadius = cornerRadius
+        self.foregroundColor = foregroundColor
+        self.backgroundColor = backgroundColor
     }
 }
