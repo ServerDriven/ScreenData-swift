@@ -1,4 +1,4 @@
-public struct SomeView: Codable {
+public struct SomeView: Codable, Hashable {
     public var type: ViewType
     
     public var container: SomeContainerView?

@@ -1,4 +1,4 @@
-public struct SomeContainerView: Codable {
+public struct SomeContainerView: Codable, Hashable {
     public var id: String?
     
     public var axis: ViewDirectionAxis

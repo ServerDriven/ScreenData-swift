@@ -1,4 +1,4 @@
-public struct Destination: Codable {
+public struct Destination: Codable, Hashable {
     public var type: DestinationType
     
     public var toID: String

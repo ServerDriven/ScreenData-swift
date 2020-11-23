@@ -1,4 +1,4 @@
-public struct SomeLabeledImage: Codable {
+public struct SomeLabeledImage: Codable, Hashable {
     public var id: String?
     
     public var title: String
