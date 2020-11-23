@@ -1,4 +1,4 @@
-public struct SomeStyle: Codable {
+public struct SomeStyle: Codable, Hashable {
     public var isHidden: Bool
     public var cornerRadius: Int
     

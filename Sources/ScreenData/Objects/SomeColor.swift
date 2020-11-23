@@ -1,4 +1,4 @@
-public struct SomeColor: Codable {
+public struct SomeColor: Codable, Hashable {
     public var red: Int
     public var green: Int
     public var blue: Int

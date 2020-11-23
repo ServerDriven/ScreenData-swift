@@ -1,4 +1,4 @@
-public struct SomeCustomView: Codable {
+public struct SomeCustomView: Codable, Hashable {
     public var id: String?
 
     public var title: String
