@@ -6,4 +6,5 @@ public enum ViewType: String, Codable {
     case labeledImage
     case container
     case custom
+    case spacer
 }
