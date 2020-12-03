@@ -1,14 +1,14 @@
 public struct SomeColor: Codable, Hashable {
-    public var red: Int
-    public var green: Int
-    public var blue: Int
-    public var alpha: Int
+    public var red: Float
+    public var green: Float
+    public var blue: Float
+    public var alpha: Float
     
     public init(
-        red: Int,
-        green: Int,
-        blue: Int,
-        alpha: Int = 255
+        red: Float,
+        green: Float,
+        blue: Float,
+        alpha: Float = 1
     ) {
         self.red = red
         self.green = green
