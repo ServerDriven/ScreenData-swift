@@ -21,6 +21,7 @@ public struct SomeButton: Codable, Hashable {
     ) {
         self.id = id
         self.title = title
+        self.actionID = actionID
         self.destination = destination
         self.style = style
     }
