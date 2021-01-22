@@ -1,7 +1,7 @@
 public struct SomeCustomView: Codable, Hashable {
     public var id: String?
 
-    public var title: String
+    public var title: String?
     public var subtitle: String?
 
     public var style: SomeStyle?
@@ -9,9 +9,9 @@ public struct SomeCustomView: Codable, Hashable {
     public var someImage: SomeImage?
 
     public var destination: Destination?
-    public var axis: ViewDirectionAxis
+    public var axis: ViewDirectionAxis?
 	
-    public var views: [SomeView]
+    public var views: [SomeView]?
     
     public var type: ViewType {
         .custom
@@ -19,13 +19,13 @@ public struct SomeCustomView: Codable, Hashable {
     
     public init(
         id: String? = nil,
-        title: String,
+        title: String? = nil,
         subtitle: String? = nil,
         style: SomeStyle? = nil,
         someImage: SomeImage? = nil,
         destination: Destination? = nil,
-        axis: ViewDirectionAxis,
-        views: [SomeView]
+        axis: ViewDirectionAxis? = nil,
+        views: [SomeView]? = nil
     ) {
         self.id = id
         self.title = title
