@@ -1,4 +1,4 @@
-public enum ImageAspectScale: String {
+public enum ImageAspectScale: String, Codable {
     case fit
     case fill
 }
