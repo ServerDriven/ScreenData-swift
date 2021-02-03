@@ -5,6 +5,7 @@ public struct SomeLabeledImage: Codable, Hashable {
     public var subtitle: String?
     public var someImage: SomeImage
     
+    public var font: FontType
     public var style: SomeStyle?
 	
     public var destination: Destination?
@@ -18,6 +19,7 @@ public struct SomeLabeledImage: Codable, Hashable {
         title: String,
         subtitle: String? = nil,
         someImage: SomeImage,
+        font: FontType,
         style: SomeStyle? = nil,
         destination: Destination? = nil
     ) {
@@ -25,6 +27,7 @@ public struct SomeLabeledImage: Codable, Hashable {
         self.title = title
         self.subtitle = subtitle
         self.someImage = someImage
+        self.font = font
         self.style = style
         self.destination = destination
     }
