@@ -17,12 +17,6 @@ public extension SomeText {
     }
 }
 
-public extension SomeLabeledImage {
-    var someView: SomeView {
-        SomeView(type: .labeledImage, someLabeledImage: self)
-    }
-}
-
 public extension SomeImage {
     var someView: SomeView {
         SomeView(type: .image, someImage: self)

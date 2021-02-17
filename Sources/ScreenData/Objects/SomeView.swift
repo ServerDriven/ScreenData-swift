@@ -6,7 +6,6 @@ public struct SomeView: Codable, Hashable {
     public var someLabel: SomeLabel?
     public var someText: SomeText?
     public var someButton: SomeButton?
-    public var someLabeledImage: SomeLabeledImage?
     public var someCustomView: SomeCustomView?
     public var someSpacer: SomeSpacer?
     
@@ -17,7 +16,6 @@ public struct SomeView: Codable, Hashable {
         someLabel: SomeLabel? = nil,
         someText: SomeText? = nil,
         someButton: SomeButton? = nil,
-        someLabeledImage: SomeLabeledImage? = nil,
         someCustomView: SomeCustomView? = nil,
         someSpacer: SomeSpacer? = nil
     ) {
@@ -27,7 +25,6 @@ public struct SomeView: Codable, Hashable {
         self.someLabel = someLabel
         self.someText = someText
         self.someButton = someButton
-        self.someLabeledImage = someLabeledImage
         self.someCustomView = someCustomView
         self.someSpacer = someSpacer
     }
