@@ -3,7 +3,6 @@ public enum ViewType: String, Codable {
     case text
     case button
     case image
-    case labeledImage
     case container
     case custom
     case spacer
