@@ -2,7 +2,6 @@ public struct SomeScreen: Codable, Hashable {
     public var id: String?
 
     public var title: String
-    public var subtitle: String?
 
     public var backgroundColor: SomeColor
 
@@ -13,7 +12,6 @@ public struct SomeScreen: Codable, Hashable {
     public init(
         id: String? = nil,
         title: String,
-        subtitle: String?,
         backgroundColor: SomeColor,
         headerView: SomeView? = nil,
         someView: SomeView,
@@ -21,7 +19,6 @@ public struct SomeScreen: Codable, Hashable {
     ) {
         self.id = id
         self.title = title
-        self.subtitle = subtitle
         self.backgroundColor = backgroundColor
         self.headerView = headerView
         self.someView = someView
