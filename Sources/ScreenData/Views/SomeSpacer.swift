@@ -1,7 +1,7 @@
 import Foundation
 
 public struct SomeSpacer: Codable, Hashable {
-    internal let id: UUID
+    public let id: UUID = UUID()
     
     public var size: Int
     
@@ -10,7 +10,6 @@ public struct SomeSpacer: Codable, Hashable {
     }
     
     public init(size: Int) {
-        self.id = UUID()
         self.size = size
     }
 }
